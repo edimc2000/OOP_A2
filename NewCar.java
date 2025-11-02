@@ -1,4 +1,5 @@
 package OOP_A2;
+
 public class NewCar extends Car {
 
     String color;
