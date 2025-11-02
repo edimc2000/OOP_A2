@@ -86,4 +86,30 @@ public class Helper {
         return (weekNumber <= 9 ? "0" : "") + weekNumber;
     }
 
+    /**
+     * Formats a decimal number to zero decimal places with grouping separators.
+     * Returns a string representation of the number formatted according to the
+     * default locale's number formatting rules, including commas as thousands
+     * separators.
+     *
+     * @param decimal the decimal number to be formatted
+     * @return a formatted string representation of the number with grouping
+     *         separators
+     *         and no decimal places
+     *
+     * @example
+     *          // Returns "1,235"
+     *          formatCommas(1234.56789);
+     *
+     * @example
+     *          // Returns "0"
+     *          formatCommas(0.0);
+     *
+     * @example
+     *          // Returns "1,000,000"
+     *          formatCommas(999999.99);
+     */
+    public static String formatCommas(double decimal) {
+        return String.format("%,.0f", decimal);
+    }
 }

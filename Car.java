@@ -10,7 +10,6 @@ public class Car {
 
     Car(double cost) {
         this.price = cost * 2;
-
     }
 
 }
