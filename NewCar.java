@@ -2,6 +2,14 @@ package OOP_A2;
 
 import static java.lang.System.out;
 
+/**
+ * NewCar.java
+ * Represents a new car with color information, extending the Car class.
+ * Includes equality and display methods for car details.
+ * Author: Eddie C.
+ * Date: 01-Nov-2025
+ */
+
 public class NewCar extends Car {
 
     String color;
@@ -31,14 +39,9 @@ public class NewCar extends Car {
         return color && cost;
     }
 
-
-      public void display(){
-        String price = String.valueOf(Helper.formatTwoDecimals(this.getPrice())); 
-            out.println(
-        String.format("price = $ %s, color = %s ",  price, this.color)
-        );
+    public void display() {
+        String price = String.valueOf(Helper.formatTwoDecimals(this.getPrice()));
+        out.println(String.format("price = $ %s, color = %s ", price, this.color));
     }
-
-
 
 }

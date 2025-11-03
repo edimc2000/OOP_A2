@@ -1,5 +1,14 @@
 package OOP_A2;
 
+
+/**
+ * UsedCar.java
+ * Represents a used car with mileage information, derived from Car.
+ * Implements equality and display functionality for output.
+ * Author: Eddie C.
+ * Date: 01-Nov-2025
+ */
+
 import static java.lang.System.out;
 
 import OOP_A2.Helper;
@@ -30,17 +39,14 @@ public class UsedCar extends Car {
         boolean mileage = this.mileage == ((UsedCar) obj).mileage;
         boolean cost = this.getPrice() == ((UsedCar) obj).getPrice();
 
-        return mileage && cost ;
+        return mileage && cost;
     }
 
-    public void display(){
-        String price = String.valueOf(Helper.formatTwoDecimals(this.getPrice())); 
-        String mileage  = String.valueOf(Helper.formatCommas(this.mileage)); 
-        out.println(
-        String.format("price = $ %s, mileage = %s ",  price, mileage)
-        );
+    public void display() {
+        String price = String.valueOf(Helper.formatTwoDecimals(this.getPrice()));
+        String mileage = String.valueOf(Helper.formatCommas(this.mileage));
+        out.println(String.format("price = $ %s, mileage = %s ", price, mileage));
+
     }
-
-
 
 }

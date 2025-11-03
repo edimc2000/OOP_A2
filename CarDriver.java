@@ -1,8 +1,15 @@
 package OOP_A2;
 
-import static java.lang.System.out;
+/**
+ * CarDriver.java
+ * Driver class to test the Car, NewCar, and UsedCar implementations.
+ * Demonstrates inheritance, method overriding, and object comparison.
+ * 
+ * Author: Eddie C.
+ * Date: 01-Nov-2025
+ */
 
-import java.lang.reflect.Field;
+import static java.lang.System.out;
 
 import OOP_A2.Helper;
 
