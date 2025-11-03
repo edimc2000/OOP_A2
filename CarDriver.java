@@ -11,30 +11,23 @@ package OOP_A2;
 
 import static java.lang.System.out;
 
-import OOP_A2.Helper;
-
 public class CarDriver {
 
     public static void main(String[] args) {
 
-        UsedCar mitsu = new UsedCar(5500, 150000);
-        UsedCar toyot = new UsedCar(5500, 150000);
-        UsedCar hyun = new UsedCar(5500, 150001);
+        NewCar new1 = new NewCar(8000.33, "silver");
+        NewCar new2 = new NewCar(8000.33, "silver");
 
-        NewCar tesla = new NewCar(150000, "majestic red");
-        NewCar teslaX = new NewCar(150000, "majestic red");
-        NewCar teslaX1 = new NewCar(150000, "majestic red1");
-
-        if (mitsu.equals(toyot)) {
-            mitsu.display();
+        if (new1.equals(new2)) {
+            new1.display();
         }
 
-        if (tesla.equals(teslaX)) {
-            tesla.display();
+        UsedCar used1 = new UsedCar(2500, 100000);
+        UsedCar used2 = new UsedCar(2500, 100000);
+
+        if (used1.equals(used2)) {
+            used1.display();
         }
-        
-
-
     }
 
 }
