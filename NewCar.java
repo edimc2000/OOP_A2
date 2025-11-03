@@ -16,7 +16,7 @@ public class NewCar extends Car {
     /**
      * The color of the new car.
      */
-    String color;
+    private String color;
 
     /**
      * Constructs a NewCar object with the specified cost and color.

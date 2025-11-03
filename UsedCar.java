@@ -18,7 +18,7 @@ public class UsedCar extends Car {
     /**
      * The mileage (odometer reading) of the used car.
      */
-    int mileage;
+    private int mileage;
 
     /**
      * Constructs a UsedCar object with the specified cost and mileage.
