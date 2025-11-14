@@ -1,5 +1,6 @@
 package OOP_A2;
 
+
 /**
  * Car.java
  * Superclass representing a generic car with a base price calculation.
